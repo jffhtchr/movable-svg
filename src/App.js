@@ -18,7 +18,14 @@ class App extends Component {
 
   handleRemoveNode = (evt) =>{
     console.log(evt.target)
-    alert('REMOVED!')
+    let targetNode;
+    for(let i = 0; i<this.state.nodes.length; i++){
+      if(event.target.id === this.state.nodes[i].id){
+        targetNode = this.state.node[i]
+        let newNodes = this.state.nodes.slice(0,i).concat(this.state.nodes.slice(i,this.state.nodes.length-1))
+        this.setState({nodes:newNodes})
+      }
+    }
   }
 
 
