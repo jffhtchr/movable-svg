@@ -1,0 +1,20 @@
+#map-container{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#map {
+    width:500px;
+    height:300px;
+    border:2px solid black;
+    display:flex;
+    background-color:whitesmoke;
+}
+
+button {
+    margin:10px;
+}
